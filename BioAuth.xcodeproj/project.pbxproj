@@ -13,6 +13,7 @@
 		7CE125952AB5E802006053B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE125932AB5E802006053B1 /* Main.storyboard */; };
 		7CE125972AB5E803006053B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE125962AB5E803006053B1 /* Assets.xcassets */; };
 		7CE1259A2AB5E803006053B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE125982AB5E803006053B1 /* LaunchScreen.storyboard */; };
+		7CE125A32AB5E843006053B1 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE125A22AB5E843006053B1 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7CE125962AB5E803006053B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CE125992AB5E803006053B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CE1259B2AB5E803006053B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE125A22AB5E843006053B1 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE125A32AB5E843006053B1 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				7CE1258C2AB5E802006053B1 /* BioAuth */,
 				7CE1258B2AB5E802006053B1 /* Products */,
+				7CE125A12AB5E843006053B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				7CE1259B2AB5E803006053B1 /* Info.plist */,
 			);
 			path = BioAuth;
+			sourceTree = "<group>";
+		};
+		7CE125A12AB5E843006053B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CE125A22AB5E843006053B1 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BioAuth/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need Face ID to authenticate our app.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,6 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BioAuth/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need Face ID to authenticate our app.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
